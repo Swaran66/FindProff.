@@ -2,9 +2,9 @@
 The script starts by taking keywords and a university URL retrieves linked URLs, converts them into a BeautifulSoup object, and extracts URLs where keywords are found, alongside professors' names and email addresses.
 
 
-#def extract_emails(text):
+# def extract_emails(text):
 •	def extract_emails(text):: This defines a function named extract_emails that takes a single parameter, text, which is expected to be a string containing the content from which email addresses need to be extracted.
-#Regular Expression (Regex)
+# Regular Expression (Regex)
 emails = re.findall(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', text)
 This looks for strings of format like this: xyz@xyz.com or .edu etc
 •	re.findall: This is a function from Python's re module (which stands for regular expressions). It searches the text for all occurrences that match the specified pattern and returns them as a list.
@@ -15,7 +15,7 @@ o	@: Matches the "@" symbol, which is a mandatory part of every email address.
 o	[A-Za-z0-9.-]+: Matches one or more characters for the domain name, including letters, digits, dots, and hyphens.
 o	\.: Matches a literal dot (.), which separates the domain name and the top-level domain (TLD).
 o	[A-Z|a-z]{2,}: Matches 2 or more characters, which are the top-level domain (e.g., .com, .edu, .org). The A-Z and a-z ensure the TLD is alphabetic.
-#Return Statement
+## Return Statement
 return emails
 •	return emails: This statement returns the list of email addresses found in the text.
 
