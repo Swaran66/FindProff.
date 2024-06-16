@@ -55,19 +55,6 @@ To find professors matching specific keywords:
 
    scrape_urls(urls, keywords)
 
-Contents
+Developed By Swaranjit Roy
 --------
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
-   installation
-   usage
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
